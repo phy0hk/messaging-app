@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.messages-box{
+    width: 500px;
+    height: 300px;
+    border: black solid 2px;
+    padding: 10px;
+    overflow: auto;
+}
+.send-msg{
+    text-align: right;
+    float: right;
+    width: 100%;
+    box-sizing: border-box;
+}
+.receive-msg{
+    text-align: left;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
