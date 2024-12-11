@@ -1,6 +1,6 @@
 const {Pool} = require('pg');
 const fs = require('fs').promises;
-const ca_cert = fs.readFile(__dirname+'/ca(1).pem',"utf-8").then((data)=>{return data})
+const ca_cert = fs.readFile(__dirname+'/ca.pem',"utf-8").then((data)=>{return data})
 const pool = new Pool({
     connectionString: process.env.Connection_String,
     ssl:{
