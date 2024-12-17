@@ -7,8 +7,8 @@ const { Server } = require('socket.io');
 // route related
 const authRoutes = require('./routes/auth');
 const protectedRoutes = require('./routes/protectedRoutes');
-const profileRoutes = require('./routes/profile');
-const friendRoutes = require('./routes/friend');
+//const profileRoutes = require('./routes/profile');
+//const friendRoutes = require('./routes/friend');
 
 const app = express();
 const server = http.createServer(app); // http server
