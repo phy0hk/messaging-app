@@ -6,7 +6,7 @@ const {
 const {
     requestPasswordReset,
     resetPassword
-} = require('../controllers/passwordController');
+} = require('../controllers/passswordContoller');
 
 // Create new router
 const router = express.Router();
