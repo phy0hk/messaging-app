@@ -8,7 +8,7 @@ const { Server } = require('socket.io');
 const authRoutes = require('./routes/auth');
 const protectedRoutes = require('./routes/protectedRoutes');
 const profileRoutes = require('./routes/profile');
-//const friendRoutes = require('./routes/friend');
+const friendRoutes = require('./routes/friend');
 
 const app = express();
 const server = http.createServer(app); // http server
@@ -73,7 +73,7 @@ io.on('connection', (socket) => {
 
 app.use('/api', profileRoutes);
 
-//app.use('/api/friend', friendRoutes);
+app.use('/api/friend', friendRoutes);
 
 server.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
