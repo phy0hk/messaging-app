@@ -1,6 +1,6 @@
 const express = require('express');
 const server = express();
-const database = require('./DB Controller/database.controller');
+// const database = require('./DB Controller/database.controller');
 require('dotenv').config();
 const {msgApi} = require('./API/MessageHandler.API')
 const PORT = 3000;
