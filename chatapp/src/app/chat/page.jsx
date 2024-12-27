@@ -27,7 +27,7 @@ export default function ChatPage() {
                 </div>
             ) : (
                 <ResizablePanelGroup direction="horizontal" className="w-full">
-                    <ResizablePanel className="min-w-[80px]">
+                    <ResizablePanel className="min-w-[80px]" >
                         <Sidebar />
                     </ResizablePanel>
                     <ResizableHandle />
