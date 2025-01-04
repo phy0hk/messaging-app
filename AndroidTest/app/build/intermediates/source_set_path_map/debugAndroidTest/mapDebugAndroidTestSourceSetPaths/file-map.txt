@@ -1,0 +1,6 @@
+com.example.androidtest.test.app-annotation-experimental-1.3.0-0 /home/p0rez/.gradle/caches/8.9/transforms/7ae0744f24ee13461bcb1f9546a92294/transformed/annotation-experimental-1.3.0/res
+com.example.androidtest.test.app-core-1.5.0-1 /home/p0rez/.gradle/caches/8.9/transforms/7ff3141b68b6a9f8e527b1c09552104a/transformed/core-1.5.0/res
+com.example.androidtest.test.app-androidTest-2 /home/p0rez/WebstormProjects/messaging-app/AndroidTest/app/build/generated/res/resValues/androidTest/debug
+com.example.androidtest.test.app-mergeDebugAndroidTestResources-3 /home/p0rez/WebstormProjects/messaging-app/AndroidTest/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.androidtest.test.app-mergeDebugAndroidTestResources-4 /home/p0rez/WebstormProjects/messaging-app/AndroidTest/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.androidtest.test.app-debugAndroidTest-5 /home/p0rez/WebstormProjects/messaging-app/AndroidTest/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
