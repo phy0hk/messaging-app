@@ -1,0 +1,32 @@
+[versions]
+agp = "8.7.3"
+kotlin = "1.9.24"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+ktorServerCore = "2.3.4"
+material = "1.10.0"
+nanohttpd = "2.3.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktorServerCore" }
+ktor-server-host-common = { module = "io.ktor:ktor-server-host-common", version.ref = "ktorServerCore" }
+ktor-server-html-builder = { module = "io.ktor:ktor-server-html-builder", version.ref = "ktorServerCore" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktorServerCore" }
+ktor-server-request = { module = "io.ktor:ktor-server-request", version.ref = "ktorServerCore" }
+ktor-server-response = { module = "io.ktor:ktor-server-response", version.ref = "ktorServerCore" }
+ktor-server-routing = { module = "io.ktor:ktor-server-routing", version.ref = "ktorServerCore" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+nanohttpd = { module = "org.nanohttpd:nanohttpd", version.ref = "nanohttpd" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
