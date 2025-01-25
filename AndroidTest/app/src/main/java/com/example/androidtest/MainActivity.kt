@@ -1,22 +1,21 @@
 package com.example.androidtest
 
+import LocalServer
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import fi.iki.elonen.NanoHTTPD
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.io.File
-import java.io.IOException
 
 
 class MainActivity : AppCompatActivity(){
+    private lateinit var server: LocalServer;
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -28,9 +27,8 @@ class MainActivity : AppCompatActivity(){
         webSettings.domStorageEnabled = true;
 //        webSettings.setSupportZoom(false);
 //        webSettings.setSupportMultipleWindows(false);
-
         try {
-
+            server.start();
             waitForServerReady("http://localhost:3000") {
                 webView.loadUrl("http://localhost:3000/")
             }
@@ -38,13 +36,14 @@ class MainActivity : AppCompatActivity(){
             e.printStackTrace()
         }
     }
+
     override fun onDestroy() {
         super.onDestroy()
 
         // Stop the server when the activity is destroyed
-        server?.stop()
         println("Server stopped")
     }
+
     private fun waitForServerReady(url: String, onReady: (String) -> Unit) {
         CoroutineScope(Dispatchers.IO).launch {
             var isServerReady = false

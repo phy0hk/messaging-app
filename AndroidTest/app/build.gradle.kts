@@ -40,7 +40,7 @@ dependencies {
     implementation(libs.ktor.server.netty)
     implementation(libs.ktor.server.html.builder)
     implementation(libs.ktor.server.core)
-    implementation(libs.ktor.server.host.common)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

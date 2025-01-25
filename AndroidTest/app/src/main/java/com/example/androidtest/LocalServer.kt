@@ -11,8 +11,7 @@ class LocalServer(private val context: Context) {
     private val server = embeddedServer(Netty, port = 3000) {
         routing {
             get("/") {
-                val htmlContent = context.assets.open("index.html").bufferedReader().use { it.readText() }
-                call.respondText(htmlContent, ContentType.Text.Html)
+                call.respondText("<h1>Hello World Man</h1>", ContentType.Text.Html)
             }
         }
     }
