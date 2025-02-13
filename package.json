@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "realm": "^20.1.0"
   }
 }
